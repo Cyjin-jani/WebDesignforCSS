@@ -6,7 +6,7 @@ CSS 기본부터 응용까지 공부하기
 
 이론적인 부분에 대한 자세한 내용정리는
 아래 tistory블로그에 정리되어 있습니다.
-<u>(아직 비공개 입니다;;;)</u>
+__(아직 비공개 입니다;;;)__
 
 [Jani의IT블로그](https://jani91.tistory.com/category/IT_TechBLOG/Front-End%3A%20CSS)
 

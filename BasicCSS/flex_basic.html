@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: powderblue;
+            height: 200px;
+            display: flex;
+            /* 반대쪽 정렬  -> flex-direction의 기본값은 row이다. */
+            flex-direction: row;
+        }
+        .item {
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+            /* container엘리먼트의 여백을 채울 수 있는 속성. */
+            /* layout을 짤 때 아주 중요하게 사용됨. */
+            /* n분의1의 의미 (기본값은 0) */
+            /* flex-grow: 1; */
+
+        }
+        .item:nth-child(1){
+            flex-basis: 150px;
+            flex-shrink: 1;
+        }
+        .item:nth-child(2) {
+            /* 기본 크기 */
+            /* flex의 방향에 해당하는 크기를 지정해줌. row면 width, column이면 height */
+            flex-basis: 150px;
+            /* flex-grow: 2; */
+            /* grow의 반대 기능: shrink */
+            flex-shrink: 2;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 무조건 class이름이 container와 item이 되어야 하는 것이 아님. -->
+    <!-- 자식과 부모 태그가 존재하면 됨. -->
+    <!-- div태그는 블럭 레벨 엘리먼트 (화면 전체 차지) -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

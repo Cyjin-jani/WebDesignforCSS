@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        header {
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+        footer {
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+        }
+        .content nav {
+            border-right: 1px solid gray;
+        }
+        .content aside {
+            border-left: 1px solid gray;
+        }
+        /* main만 화면이 줄어들게 만들기 위함. */
+        nav, aside {
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main {
+            padding: 10px;
+        }
+        nav {
+            order: -1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            
+            <!-- 메인 컨텐츠 부분 -->
+            <main>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum recusandae, aspernatur totam debitis voluptas exercitationem dolore veritatis doloremque facilis autem officiis repellendus error deleniti asperiores omnis, culpa praesentium! Doloremque debitis vel culpa! Dolores voluptas natus enim accusamus cumque aut aliquid esse eius dolor ipsum voluptate nesciunt fuga quod, placeat amet, tempore blanditiis quos eligendi est perspiciatis ut rem cupiditate harum exercitationem? Quis magnam harum cupiditate tempore, necessitatibus blanditiis unde sit voluptatibus debitis veniam deleniti. Aperiam saepe dolorem iusto laborum facere. Commodi nostrum inventore maiores molestias adipisci harum nihil aperiam omnis fugiat quas quaerat ducimus doloremque, velit illum praesentium pariatur!
+            </main>
+            <!-- 네비게이션 부분 -->
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <!-- 이 홈페이지에서 부가적인 역할을 하는 부분. -->
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+           <a href="https://opentutorials.org/course/1">홈페이지</a>  
+        </footer>
+    </div>
+</body>
+</html>
